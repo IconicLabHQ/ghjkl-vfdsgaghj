@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Coming Soon</title>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(135deg, #0a0a10, #1a1a2e);
+      color: white;
+      font-family: 'Audiowide', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+    .loader {
+      animation: pulse 1.5s infinite;
+      font-size: 3rem;
+      color: #9b5de5;
+      margin-bottom: 1rem;
+    }
+    h1 {
+      font-family: 'Audiowide', cursive;
+      font-size: 2.5rem;
+      color: white;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      color: #b0b0b0;
+      font-size: 1.1rem;
+    }
+    .hourglass-animation {
+  animation: flipHourglass 2s infinite;
+  display: inline-block;
+}
+
+@keyframes flipHourglass {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(180deg); }
+}
+
+
+    
+  </style>
+</head>
+<body>
+  <div>
+  <div class="loader"><i class="fas fa-hourglass-half hourglass-animation"></i></div>
+
+    <h1>Coming Soon</h1>
+    <p>Your futuristic GameFi world is loading...</p>
+  </div>
+
+  
+</body>
+</html>
