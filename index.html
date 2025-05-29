@@ -6,6 +6,8 @@
     <title>{Game Token} - Web3 GameFi Platform</title>
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <style>
         * {
             margin: 0;
@@ -1119,7 +1121,7 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" data-aos="fade-up">
         <div class="nav-container">
             <div class="logo">
                 <img src="https://via.placeholder.com/40x40/9b5de5/ffffff?text=GT" alt="Game Token Logo">
@@ -1141,7 +1143,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero" id="home">
+    <section class="hero" id="home" data-aos="fade-down">
         <div class="particles"></div>
         <div class="hero-content">
             <h1 class="hero-title">Enter the World of {Game Token}</h1>
@@ -1156,7 +1158,7 @@
     <!-- Tokenomics Section -->
     <section class="tokenomics" id="tokenomics">
         <div class="tokenomics-container">
-            <div class="section-header">
+            <div class="section-header" data-aos="fade-left">
                 <h2 class="section-title">The Power Behind {Game Token}</h2>
                 <p class="section-description">
                     Our revolutionary token ecosystem powers every aspect of the gaming experience. 
@@ -1165,7 +1167,7 @@
                 </p>
             </div>
 
-            <div class="tokenomics-content">
+            <div class="tokenomics-content" data-aos="fade-right">
                 <div class="token-chart">
                     <div class="chart-placeholder">
                         <i class="fas fa-chart-pie"></i>
@@ -1231,7 +1233,7 @@
     <!-- ADD THIS HTML AFTER THE TOKENOMICS SECTION -->
 
 <!-- Game Overview Section -->
-<section class="game-overview" id="game">
+<section class="game-overview" id="game" data-aos="fade-up">
     <div class="game-container">
         <div class="game-content">
             <div class="game-media">
@@ -1286,9 +1288,9 @@
 </section>
 
 <!-- Roadmap Section -->
-<section class="roadmap" id="roadmap">
+<section class="roadmap" id="roadmap" >
     <div class="roadmap-container">
-        <div class="section-header">
+        <div class="section-header" data-aos="fade-left">
             <h2 class="section-title">Roadmap to Domination</h2>
             <p class="section-description">
                 Our journey to revolutionize GameFi is mapped out with clear milestones. 
@@ -1296,7 +1298,7 @@
             </p>
         </div>
         
-        <div class="timeline">
+        <div class="timeline" data-aos="fade-right">
             <div class="timeline-item completed">
                 <div class="timeline-marker">
                     <i class="fas fa-check"></i>
@@ -1308,7 +1310,7 @@
                 </div>
             </div>
             
-            <div class="timeline-item active">
+            <div class="timeline-item active" data-aos="fade-left">
                 <div class="timeline-marker">
                     <i class="fas fa-rocket"></i>
                 </div>
@@ -1319,7 +1321,7 @@
                 </div>
             </div>
             
-            <div class="timeline-item">
+            <div class="timeline-item" data-aos="fade-right">
                 <div class="timeline-marker">
                     <i class="fas fa-users"></i>
                 </div>
@@ -1330,7 +1332,7 @@
                 </div>
             </div>
             
-            <div class="timeline-item">
+            <div class="timeline-item" data-aos="fade-left">
                 <div class="timeline-marker">
                     <i class="fas fa-vote-yea"></i>
                 </div>
@@ -1341,7 +1343,7 @@
                 </div>
             </div>
             
-            <div class="timeline-item">
+            <div class="timeline-item" data-aos="fade-right">
                 <div class="timeline-marker">
                     <i class="fas fa-globe"></i>
                 </div>
@@ -1356,7 +1358,7 @@
 </section>
 
 <!-- Community Section -->
-<section class="community" id="community">
+<section class="community" id="community" data-aos="fade-down">
   <div class="community-container">
     <h2 class="section-title">Join the Community</h2>
     <p class="section-description">Connect with fellow gamers, discuss strategies, and stay updated on the latest news.</p>
@@ -1371,7 +1373,7 @@
 
 
 <!-- Footer Section -->
-<footer class="footer">
+<footer class="footer" data-aos="fade-up">
   <div class="footer-container">
     <div class="footer-left">
       <h3>{Game Token}</h3>
@@ -1483,6 +1485,10 @@ document.querySelectorAll('.nav-links a').forEach(link => {
                 }
             });
         });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 </html>
